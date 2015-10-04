@@ -88,6 +88,7 @@ let mapleader = "\<Space>"
 
 " Leader key mappgins
 nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>n :CtrlP<CR>
 
 filetype plugin indent on
 
