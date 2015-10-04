@@ -22,6 +22,9 @@ colorscheme wombat256
 " Turn on syntax highlighting
 syntax on
 
+" Need to set our shell for gitgutter
+set shell=/bin/zsh
+
 " Highlight searches
 set hlsearch
 
