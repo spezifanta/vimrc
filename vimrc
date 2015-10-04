@@ -86,6 +86,9 @@ inoremap jk <ESC>
 " Set leader key
 let mapleader = "\<Space>"
 
+" Leader key mappgins
+nnoremap <leader>e :NERDTreeToggle<CR>
+
 filetype plugin indent on
 
 " Set unix line endings
