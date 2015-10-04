@@ -7,17 +7,17 @@ set ttyfast
 " Always show the name of the file being edited.
 set laststatus=2
 
-" Autosave existing files as soon as vim's windows loses focus. This way no
-" manually saving is necessary. Untitled files will get ignored.
+" Auto save existing files when lossing window focus. Ignore errors, if file
+" can not be saved.
 " @url http://vim.wikia.com/wiki/Auto_save_files_when_focus_is_lost
 autocmd FocusLost * silent! wa
 
 " Remove trailing whitespaces
-autocmd BufWritePre * :%s/ \+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Theme
-"#colorscheme wombat256
-colorscheme monokai
+colorscheme wombat256
+"colorscheme monokai
 
 " Turn on syntax highlighting
 syntax on
@@ -84,3 +84,19 @@ inoremap jk <ESC>
 let mapleader = "\<Space>"
 
 filetype plugin indent on
+
+" Set unix line endings
+set fileformat=unix
+
+" Unmap arrow keys, otherwise we will never learn to use hjkl
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Pathogen & Plugins
+execute pathogen#infect()
