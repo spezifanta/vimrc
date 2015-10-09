@@ -107,3 +107,6 @@ inoremap <right> <nop>
 
 " Pathogen & Plugins
 execute pathogen#infect()
+
+" Powerline Font 4 Airline
+let g:airline_powerline_fonts = 1
