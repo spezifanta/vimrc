@@ -6,7 +6,7 @@ Too many dotfiles. Needed more separation. This way I can have my .vimrc on any 
 # Install
 
 ```
-git clone --recursive https://github.com/spezifanta/vimrc.git
+git clone --recursive https://github.com/spezifanta/vimrc.git $HOME/.vim
 pip install --user git+git://github.com/powerline/powerline
 ```
 
